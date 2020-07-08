@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/sort_by_app_name"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort_by_app_name" />
+    <item
+        android:id="@+id/sort_by_country_name"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort_by_country_name" />
+
+    <item android:id="@+id/rateus"
+        android:title="@string/rate_now"
+        android:icon="@drawable/ic_rate"/>
+
+</menu>

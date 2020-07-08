@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">App Launcher</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="admob_app_id">ca-app-pub-8205609285656797~3141821126</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8205609285656797/1426512253</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-8205609285656797/8250446067</string>
+    <string name="native_ad_unit_id">ca-app-pub-8205609285656797/5628152154</string>
+    <string name="share">Share</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rateus">Rate Us</string>
+    <string name="exit">Exit</string>
+    <string name="share_with">share with</string>
+    <string name="yes">YES</string>
+    <string name="ok">OK</string>
+    <string name="alerts">Alert!!!</string>
+    <string name="save_your_changes_successfully">Save your changes Successfully</string>
+    <string name="ad">Ad</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="total_app">Count</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="info">India\'s first app to identify apps based on country.</string>
+    <string name="sort_by_app_name">Sort By App Name</string>
+    <string name="sort_by_country_name">Sort By Country Name</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="ignore">Ignore</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/darkmode"-->
+<!--        android:checked="false"-->
+<!--        android:checkable="true"-->
+<!--        android:title="@string/enable_dark_mode"-->
+<!--        android:visible="true"-->
+<!--        app:actionLayout="@layout/menu_switch"-->
+<!--        app:showAsAction="never" >-->
+<!--    </item>-->
+
+
+<!--    <item android:checkable="true"-->
+<!--        android:title="@string/vibration"-->
+<!--        android:checked="true"-->
+<!--        android:id="@+id/vibration"-->
+<!--        app:showAsAction="collapseActionView">-->
+<!--    </item>-->
+
+
+<!--    <item-->
+<!--        android:title="40 Apps"-->
+<!--        android:id="@+id/total_app_count"-->
+<!--        android:visible="true"-->
+<!--        app:showAsAction="always"/>-->
+
+    <item
+        android:title="@string/privacy_policy"
+        android:id="@+id/prvacy"/>
+    <item
+        android:title="@string/rateus"
+        android:id="@+id/rateus"/>
+    <item
+        android:title="@string/exit"
+        android:id="@+id/exit"/>
+</menu>

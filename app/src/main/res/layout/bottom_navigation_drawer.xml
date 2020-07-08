@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- navigation header layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/tiger"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_toStartOf="@+id/close_image_view"
+            android:layout_toEndOf="@+id/profile_image"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_toStartOf="@+id/close_image_view"
+            android:layout_toEndOf="@+id/profile_image"
+            android:text="@string/info"
+            android:textColor="@android:color/black" />
+
+
+        <ImageView
+            android:id="@+id/close_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_close"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/divider_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/user_email"
+            android:layout_marginTop="15dp"
+            android:background="#447e7e7e" />
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        app:itemTextColor="@color/black"
+        app:itemShapeFillColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/bottom_navigation"/>
+</LinearLayout>

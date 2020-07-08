@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#128C7E</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="light_grey">#CDCDCD</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="semi_transparent_black">#6a000000</color>
+    <color name="colorBackgroundEnd">#b0bec5</color>
+    <color name="colorBackgroundStart">#fafafa</color>
+    <color name="shrine_pink_100">#FF7DDA</color>
+    <color name="shrine_pink_900">#FF91E7</color>
+    <color name="shrine_pink_50">#FFBCF0</color>
+</resources>
