@@ -14,10 +14,18 @@ android {
         applicationId "com.kauale.app_identifier"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        config {
+            keyAlias 'App Launcher'
+            keyPassword 'launcher@123'
+            storeFile file('/Users/shubhamjaiswal 1/AndroidStudioProjects/AppKeys/AppLaucherKeys/app_launcher_key.jks')
+            storePassword 'launcher@123'
+        }
     }
 
     buildTypes {
@@ -26,6 +34,7 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {

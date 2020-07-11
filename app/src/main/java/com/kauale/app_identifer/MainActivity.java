@@ -199,9 +199,8 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
         try {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My application name");
-            String shareMessage = "I used this app to support Indian army and uninstalled ch***se Apps installed. Share this to support indian " +
-                    "army and boycott ch***se Apps. \n";
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "App Launcher");
+            String shareMessage = "I used this app to support Indian army and uninstalled ch***se Apps installed. Share this to support indian army and boycott ch***se Apps. \n";
             shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
             startActivity(Intent.createChooser(shareIntent, this.getString(R.string.share_with)));
@@ -359,6 +358,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
         if(mainLayout.getVisibility() == View.GONE){
             mainLayout.setVisibility(View.VISIBLE);
             privacyPolicyLayout.setVisibility(View.GONE);
+            homeFragment.updateAdapter(appDetailsModelList);
         }else  if(iskeyboarOpen){
             iskeyboarOpen = false;
             hamburgerMenu.setImageDrawable(this.getResources().getDrawable(R.drawable.ic_menu));
@@ -460,6 +460,9 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
             case R.id.exit:
                 CommonUtil.openDialogBox("Do you really want to exit ?", this);
                break;
+            case R.id.share:
+                share();
+                break;
             default:
         }
         drawerLayout.closeDrawer(GravityCompat.START);

@@ -34,6 +34,9 @@
         android:title="@string/rateus"
         android:id="@+id/rateus"/>
     <item
+        android:title="@string/share"
+        android:id="@+id/share"/>
+    <item
         android:title="@string/exit"
         android:id="@+id/exit"/>
 </menu>
