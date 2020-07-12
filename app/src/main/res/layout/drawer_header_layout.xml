@@ -15,10 +15,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_66sdp"
-        android:paddingLeft="@dimen/_minus16sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:paddingLeft="@dimen/_minus5sdp"
         android:scaleType="fitXY"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        android:src="@drawable/ic_logo" />
 
     <TextView
         android:layout_width="match_parent"

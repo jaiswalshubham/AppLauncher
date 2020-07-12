@@ -14,17 +14,13 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.ads.formats.UnifiedNativeAdView;
-import com.kauale.app_identifer.home.AppCountryModel;
-import com.kauale.app_identifer.home.AppDetailsModel;
-import com.kauale.app_identifer.R;
-import com.kauale.app_identifer.logs.AppIndentifierLogs;
-import com.kauale.app_identifer.utils.CommonUtil;
+import com.kauale.app_launcher.home.AppDetailsModel;
+import com.kauale.app_launcher.R;
+import com.kauale.app_launcher.logs.AppIndentifierLogs;
+import com.kauale.app_launcher.utils.CommonUtil;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class AppDetailsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -133,34 +129,7 @@ public class AppDetailsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         return false;
     }
 
-    public static class UnifiedNativeAdViewHolder extends RecyclerView.ViewHolder {
 
-
-        private UnifiedNativeAdView adView;
-
-        public UnifiedNativeAdView getAdView() {
-            return adView;
-        }
-
-        public UnifiedNativeAdViewHolder(View view) {
-            super(view);
-            adView = view.findViewById(R.id.ad_view);
-
-            // The MediaView will display a video asset if one is present in the ad, and the
-            // first image asset otherwise.
-            adView.setMediaView(adView.findViewById(R.id.ad_media));
-
-            // Register the view used for each individual asset.
-            adView.setHeadlineView(adView.findViewById(R.id.ad_headline));
-            adView.setBodyView(adView.findViewById(R.id.ad_body));
-            adView.setCallToActionView(adView.findViewById(R.id.ad_call_to_action));
-            adView.setIconView(adView.findViewById(R.id.ad_icon));
-            adView.setPriceView(adView.findViewById(R.id.ad_price));
-            adView.setStarRatingView(adView.findViewById(R.id.ad_stars));
-            adView.setStoreView(adView.findViewById(R.id.ad_store));
-            adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
-        }
-    }
 
     public interface OnItemClicked {
         void onDeleteClicked(AppDetailsModel appDetailsModel, int position);

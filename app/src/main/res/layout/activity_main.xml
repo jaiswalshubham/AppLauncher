@@ -57,8 +57,6 @@
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp"
             app:fontFamily="@font/open_sans"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
@@ -80,54 +78,13 @@
             android:background="@color/white"
             android:layout_gravity="bottom">
             <TextView
-                android:id="@+id/version_code"
+                android:id="@+id/dev_name"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
-                android:text="Design &amp; Developed by\nShubham Jaiswal" />
+                android:text="@string/dev_name" />
         </LinearLayout>
     </com.google.android.material.navigation.NavigationView>
 
-<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
-<!--        android:id="@+id/bottomAppBar"-->
-<!--        android:theme="@style/AppTheme1"-->
-<!--        app:backgroundTint="@color/colorPrimaryDark"-->
-<!--        app:popupTheme="@style/Widget.MaterialComponents.Chip.Entry"-->
-<!--        app:hideOnScroll="true"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        app:menu="@menu/bottom_navigation_menu"-->
-<!--        app:navigationIcon="@drawable/ic_menu">-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/search_edt"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:inputType="textVisiblePassword"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textColorHint="@color/white"-->
-<!--            android:background="@android:color/transparent"-->
-<!--            android:autofillHints="App Name"-->
-<!--            tools:ignore="LabelFor" />-->
-<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
-
-
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/scannerfab"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:fabSize="auto"-->
-<!--        app:fabCustomSize="@dimen/_60sdp"-->
-<!--        app:rippleColor="@color/white"-->
-<!--        app:backgroundTint="@color/black"-->
-<!--        android:clickable="true"-->
-<!--        android:background="?android:attr/selectableItemBackground"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:src="@drawable/ic_share"-->
-<!--        android:layout_marginBottom="26dp"-->
-<!--        android:focusable="true"-->
-<!--        app:layout_anchor="@id/bottomAppBar"/>-->
 </androidx.drawerlayout.widget.DrawerLayout>

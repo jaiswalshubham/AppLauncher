@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,9 +15,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.navigation.NavigationView;
-import com.kauale.app_identifer.BuildConfig;
-import com.kauale.app_identifer.MainActivity;
-import com.kauale.app_identifer.R;
+import com.kauale.app_launcher.BuildConfig;
+import com.kauale.app_launcher.MainActivity;
+import com.kauale.app_launcher.R;
 
 public class BottomSheetNavigationFragment extends BottomSheetDialogFragment {
     MainActivity mainActivity;

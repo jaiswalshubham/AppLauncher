@@ -17,29 +17,19 @@
     </item>
 
 
-    <item
-        android:top="@dimen/_30sdp"
-        android:bottom="@dimen/_20sdp"
-        >
-        <bitmap android:src="@drawable/jai"
-            android:gravity="top"/>
-    </item>
 
 
     <item
-        android:left="@dimen/_110sdp"
-        android:right="@dimen/_110sdp"
-        android:top="@dimen/_160sdp"
-        android:bottom="@dimen/_110sdp">
-        <bitmap android:src="@drawable/tiger"
-            android:gravity="center"/>
-    </item>
+        android:height="@dimen/_80sdp"
+        android:width="@dimen/_80sdp"
+        android:drawable="@drawable/ic_logo"
+        android:gravity="center"/>
     <item
-        android:left="@dimen/_110sdp"
-        android:right="@dimen/_110sdp"
-        android:top="@dimen/_160sdp"
-        android:bottom="@dimen/_30sdp"
+        android:left="@dimen/_60sdp"
+        android:right="@dimen/_60sdp"
+        android:bottom="@dimen/_60sdp"
         android:gravity="bottom"
+        android:height="@dimen/_40sdp"
         android:drawable="@drawable/info_img">
     </item>
 

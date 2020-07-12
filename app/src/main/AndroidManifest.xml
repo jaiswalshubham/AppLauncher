@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.kauale.app_identifer">
+    package="com.kauale.app_launcher">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -12,12 +12,12 @@
     <uses-permission android:name="android.permission.USAGE_ACCESS_SETTINGS"/>
 
     <application
-        android:name="com.kauale.app_identifer.application.MyApplication"
+        android:name=".application.MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -25,17 +25,16 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8205609285656797~3141821126" />
 
-        <activity android:name="com.kauale.app_identifer.PrivacyPolicyActivity"
-            android:parentActivityName="com.kauale.app_identifer.MainActivity"
-            android:windowSoftInputMode="adjustPan"/>
         <activity
-            android:name="com.kauale.app_identifer.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Design.NoActionBar"
             android:configChanges="locale|orientation|uiMode"
             android:windowSoftInputMode="stateVisible" />
         <activity
-            android:name="com.kauale.app_identifer.SplashActivity"
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
